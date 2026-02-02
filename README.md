@@ -1,64 +1,53 @@
-# K-Means-Clustering-from-Scratch
+# *K-Means-Clustering-from-Scratch*
 Implementing and Analyzing K-Means Clustering from Scratch
 
-1) Dataset Preparation
-   This dataset simulates customer purchase behavior in a simple business scenario. 
-   It’s intentionally designed to teach how data → decisions → predictions work.
-   
-   "Given a customer’s profile, can we predict whether they will purchase?"
+# Customer Segmentation using K-Means Clustering
 
-  1. age
-        - Customer’s age (21–49)
-        - Proxy for life stage
-        - Influences income, experience, and spending maturity
+## Problem Statement
+The objective of this project is to segment customers based on their demographic
+and spending behavior using the K-Means clustering algorithm. The goal is to
+identify distinct customer groups that can help businesses make better
+data-driven decisions.
 
-    Hidden idea: age itself doesn’t cause purchase — it correlates with other factors.
+## Dataset
+A synthetic dataset containing 200 customer records was used in this project.
+The dataset includes the following features:
 
-  2. experience
-        - Years of work experience
-        - Derived from age (not random)
-        - Indicates earning stability
-     
-    Why it matters:  More experience → more stable income → higher purchasing power.
+- Age
+- Annual Income
+- Years of Experience
+- Spending Score
 
-  4. income
-        - Monthly income (₹)
-        - Function of experience + noise
-        - Core economic driver
+An additional column indicating purchase behavior is used only for interpretation
+and not for clustering.
 
-    This is the strongest signal in the dataset.
+## Approach
+1. Load and understand the dataset
+2. Select relevant features for clustering
+3. Visualize and explore data patterns
+4. Choose the number of clusters (K = 4)
+5. Initialize centroids
+6. Assign data points to nearest centroids
+7. Update centroids using mean values
+8. Repeat until convergence
+9. Interpret and evaluate clusters
 
-  4. spend_score
-        Abstract score (20–95)
-        Represents:
-        - Lifestyle
-        - Willingness to spend
-        - Consumption behavior
+## Algorithm Used
+- K-Means Clustering (Unsupervised Machine Learning)
 
-    Think of it as: “How likely is this person to spend money freely?”
+## Results
+The algorithm successfully grouped customers into four meaningful clusters.
+Each cluster represents a different customer segment based on income,
+experience, and spending behavior.
 
-  5. purchased (Target Variable)
-        0 → Did not purchase
-        1 → Purchased
+## Business Insights
+- Different marketing strategies can be designed for each customer group
+- High spending clusters can be targeted with premium offers
+- Low engagement clusters can be nurtured with promotions
 
-    This is what your ML model tries to predict.
+## Conclusion
+This project demonstrates how K-Means clustering can be used to discover
+hidden patterns in customer data and support business decision-making.
 
-
-*The hidden logic*
-The dataset follows this causal chain:
-
-          Age
-           ↓
-      Experience
-           ↓
-        Income
-           ↓
-      Spend Score
-           ↓
-    Purchase Decision
-
-So:
-Young + low income → low spend score → no purchase
-Older + stable income → high spend score → purchase
 
     This is designed reality, not randomness.
