@@ -47,4 +47,42 @@ This is a **synthetic dataset** created for learning purposes.
 
 ## 📐 Inertia (Sum of Squared Errors)
 Inertia represents the **compactness of clusters** and is calculated as:
+`Inertia = Σ (distance between each point and its centroid)²`
 
+Lower inertia indicates better clustering.
+
+---
+
+## 🔬 Comparison: Custom vs Scikit-Learn Implementation
+
+| Aspect | Custom Implementation | Scikit-Learn |
+|------|----------------------|--------------|
+| Control | Full control over each step | Abstracted |
+| Speed | Slower | Faster |
+| Learning Value | Very high | Moderate |
+| Stability | Depends on initialization | Uses optimized methods |
+
+---
+
+## 📈 Visualization
+Clusters are visualized using:
+- X-axis: Income  
+- Y-axis: Spending Score  
+- Centroids marked using `X`
+
+---
+
+## 🛠 Technologies Used
+- Python  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- Scikit-learn  
+
+---
+
+## ✅ Conclusion
+This project provides a deep understanding of K-Means clustering by building it from scratch and validating results using scikit-learn.  
+It strengthens core machine learning fundamentals and prepares the learner for real-world ML applications.
+
+--- 
