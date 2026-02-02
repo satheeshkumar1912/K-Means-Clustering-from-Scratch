@@ -117,7 +117,7 @@ Final Inertia (Scikit-Learn KMeans): 11119014323.31233
 ---
 
 **✅ Conclusion**
-This project provides a deep understanding of K-Means clustering by building it from scratch and validating results using scikit-learn.  
-It strengthens core machine learning fundamentals and prepares the learner for real-world ML applications.
+- This project provides a deep understanding of K-Means clustering by building it from scratch and validating results using scikit-learn.  
+- It strengthens core machine learning fundamentals and prepares the learner for real-world ML applications.
 
 --- 
