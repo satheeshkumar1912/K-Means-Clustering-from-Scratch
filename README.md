@@ -48,6 +48,3 @@ experience, and spending behavior.
 ## Conclusion
 This project demonstrates how K-Means clustering can be used to discover
 hidden patterns in customer data and support business decision-making.
-
-
-    This is designed reality, not randomness.
