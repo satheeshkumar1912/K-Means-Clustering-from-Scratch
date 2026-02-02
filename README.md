@@ -81,7 +81,42 @@ Clusters are visualized using:
 
 ---
 
-## ✅ Conclusion
+## 📊 Result Analysis
+
+## Performance:
+The scikit-learn implementation converges faster due to optimized vectorized operations, whereas the custom implementation is slower because it uses explicit loops.
+
+**Stability:**
+The custom implementation is more sensitive to centroid initialization. Different random seeds can lead to different clustering outcomes. Scikit-learn mitigates this by using smarter initialization techniques.
+
+**Interpretation:**
+Both implementations produced similar cluster structures, confirming the correctness of the custom algorithm. The slight difference in inertia values highlights the impact of initialization and numerical optimization.
+
+**Impact of Initialization:**
+Random centroid initialization can affect final clusters. Poor initial centroids may lead to higher inertia or suboptimal segmentation. This reinforces the importance of initialization strategies in K-Means.
+
+--- 
+
+## 📐 Inertia (Sum of Squared Errors)
+
+Inertia measures how well the data points are clustered around their respective centroids.  
+It is calculated as the **sum of squared Euclidean distances** between each data point and its assigned centroid.
+
+### Final Inertia Values
+
+- **Custom K-Means Implementation:**  
+Final Inertia (Custom K-Means): 11137751639.519419
+
+- **Scikit-Learn KMeans Implementation:**
+Final Inertia (Scikit-Learn KMeans): 11119014323.31233
+
+### Observation
+- The scikit-learn implementation produces slightly lower inertia due to optimized centroid initialization and numerical computation.  
+- The similarity in inertia values confirms the correctness of the custom K-Means implementation.
+
+---
+
+**✅ Conclusion**
 This project provides a deep understanding of K-Means clustering by building it from scratch and validating results using scikit-learn.  
 It strengthens core machine learning fundamentals and prepares the learner for real-world ML applications.
 
