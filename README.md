@@ -105,10 +105,10 @@ It is calculated as the **sum of squared Euclidean distances** between each data
 ### Final Inertia Values
 
 - **Custom K-Means Implementation:**  
-Final Inertia (Custom K-Means): 11137751639.519419
+Final Inertia (Custom K-Means): `11137751639.519419`
 
 - **Scikit-Learn KMeans Implementation:**
-Final Inertia (Scikit-Learn KMeans): 11119014323.31233
+Final Inertia (Scikit-Learn KMeans): `11119014323.31233`
 
 ### Observation
 - The scikit-learn implementation produces slightly lower inertia due to optimized centroid initialization and numerical computation.  
